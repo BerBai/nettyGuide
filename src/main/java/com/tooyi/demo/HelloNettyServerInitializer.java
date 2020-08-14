@@ -1,9 +1,10 @@
-package com.tooyi;
+package com.tooyi.demo;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.http.HttpServerCodec;
+
 /**
  * 初始化器，channel注册之后，会执行里边的响应的初始化方法
  * @author tooyi

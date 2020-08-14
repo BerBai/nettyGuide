@@ -1,4 +1,4 @@
-package com.tooyi;
+package com.tooyi.demo;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
