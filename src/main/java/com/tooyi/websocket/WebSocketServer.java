@@ -16,8 +16,8 @@ public class WebSocketServer {
             ServerBootstrap serverBootstrap = new ServerBootstrap();
             serverBootstrap.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
-                    .childHandler(null);
-            ChannelFuture future = serverBootstrap.bind(8888).sync();
+                    .childHandler(new WebSocketServerInitializer());
+            ChannelFuture future = serverBootstrap.bind(8088).sync();
             future.channel().closeFuture().sync();
         } finally {
             bossGroup.shutdownGracefully();
