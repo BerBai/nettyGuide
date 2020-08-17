@@ -1,0 +1,8 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /chattest
+
+# 配置mapper.xml路径
+#mybatis:
+#  mapper-locations: classpath:mapping/*.xml
